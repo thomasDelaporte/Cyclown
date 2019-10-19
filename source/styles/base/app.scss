@@ -1,0 +1,30 @@
+*,*:before,*:after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#app{
+    font-family: 'Ubuntu';
+    color: #fff;
+    font-size: 12px;
+    image-rendering: pixelated;
+
+    @include userdrag(none);
+    @include userselect(none);
+
+    .client {
+        background-color: #000;
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+
+        &.is-room{
+
+            .toolbar{
+                background-color: transparentize(#2e2e2c, .6);
+                border-color: transparentize(#53524f, .6);
+            }
+        }
+    }
+}

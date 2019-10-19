@@ -1,0 +1,41 @@
+@mixin flipH {
+    -moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+@mixin flipV {
+	-moz-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+	transform: scaleY(-1);
+	filter: FlipV;
+    -ms-filter: "FlipV";
+}
+
+@mixin flipHV {
+	-moz-transform: scaleX(-1) scaleY(-1);
+    -o-transform: scaleX(-1) scaleY(-1);
+    -webkit-transform: scaleX(-1) scaleY(-1);
+    transform: scaleX(-1) scaleY(-1);
+    filter: FlipH FlipV;
+    -ms-filter: "FlipH FlipV";
+}
+
+@mixin userdrag($value) {
+	-webkit-user-drag: $value;
+	-khtml-user-drag: $value;
+	-moz-user-drag: $value;
+	-o-user-drag: $value;
+	user-drag: $value;
+}
+
+@mixin userselect($value) {
+	user-select: $value;
+	-moz-user-select: $value;
+	-webkit-user-select: $value;
+	-ms-user-select: $value;
+}

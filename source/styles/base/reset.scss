@@ -1,0 +1,23 @@
+button {
+    outline: none;
+    border: none;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+textarea {
+
+    &:focus {
+        outline: none;
+    }
+}

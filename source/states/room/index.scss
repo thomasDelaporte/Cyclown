@@ -1,0 +1,11 @@
+.room {
+    //background-image: url('https://i.imgur.com/E1mQfua.png');
+    background-repeat: no-repeat;
+    height: 100%;
+
+    .room-chat{
+        position: fixed;
+        left: 40%;
+        top: 100px;
+    }
+}

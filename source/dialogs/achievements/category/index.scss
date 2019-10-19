@@ -1,0 +1,20 @@
+.dialog-cheader {
+    height: 75px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10px;
+
+    .icon {
+        margin-right: 20px;
+    }
+
+    small {
+        display: inline-block;
+        margin-top: 5px;
+        font-size: 11px;
+    }
+
+    img {
+        margin-left: auto;
+    }
+}

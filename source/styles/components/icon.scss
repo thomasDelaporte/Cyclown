@@ -1,0 +1,628 @@
+.icon{
+    display: inline-flex;
+    align-items: center;
+    font-style: normal;
+
+    &:before{
+        display: inline-block;
+        content: '';
+    }
+
+    $icons: (
+        inventory: (
+            image: 'r63b/toolbar/icons/inventory.png',
+            width: 44,
+            height: 41
+        ),
+
+        catalog: (
+            image: 'r63b/toolbar/icons/catalog.png',
+            width: 37,
+            height: 37
+        ),
+
+        buildersclub: (
+            image: 'r63b/toolbar/icons/buildersclub.png',
+            width: 32,
+            height: 33
+        ),
+
+        rooms: (
+            image: 'r63b/toolbar/icons/rooms.png',
+            width: 44,
+            height: 30
+        ),
+
+        house: (
+            image: 'r63b/toolbar/icons/house.png',
+            width: 32,
+            height: 30
+        ),
+
+        friendall: (
+            image: 'r63b/toolbar/icons/friend_all.png',
+            width: 32,
+            height: 33
+        ),
+
+        friendsearch: (
+            image: 'r63b/toolbar/icons/friend_search.png',
+            width: 29,
+            height: 33
+        ),
+
+        sendmessage: (
+            image: 'r63b/toolbar/icons/sendmessage.png',
+            width: 20,
+            height: 21
+        ),
+
+        profile: (
+            image: 'r63b/toolbar/icons/profile.png',
+            width: 21,
+            height: 21,
+
+            small: (
+                image: 'icons/small_profile.png',
+                width: 13,
+                height: 11,
+
+                hover: (
+                    image: 'icons/small_profile_glow.png'
+                )
+            ),
+        ),
+
+        joinroom: (
+            image: 'r63b/toolbar/icons/joinroom.png',
+            width: 21,
+            height: 21
+        ),
+
+        habbo: (
+            image: 'r63b/toolbar/icons/habbo.png',
+            width: 28,
+            height: 28,
+            
+            small: (
+                image: 'icons/small_habbo.png',
+                height: 16,
+                width: 16
+            )
+        ),
+
+        camera: (
+            image: 'r63b/toolbar/icons/camera.png',
+            width: 38,
+            height: 45
+        ),
+
+        disable-fs: (
+            image: 'icons/disable_fs.png',
+            width: 15,
+            height: 14,
+        ),
+
+        fs: (
+            image: 'icons/fullscreen.png',
+            width: 15,
+            height: 14,
+        ),
+
+        diamond: (
+            image: 'icons/diamond.png',
+            width: 15,
+            height: 15,
+
+            hover: (
+                image: 'icons/diamond_glow.png'
+            )
+        ),
+
+        credit: (
+            image: 'icons/credit.png',
+            width: 15,
+            height: 15,
+
+            hover: (
+                image: 'icons/credit_glow.png'
+            )
+        ),
+
+        ducket: (
+            image: 'icons/ducket.png',
+            width: 15,
+            height: 15,
+
+            hover: (
+                image: 'icons/ducket_glow.png'
+            )
+        ),
+
+        hc: (
+            image: 'icons/hc.png',
+            width: 15,
+            height: 15
+        ),
+
+        exit: (
+            image: 'icons/exit.svg',
+            width: 13,
+            height: 11
+        ),
+
+        gear: (
+            image: 'icons/gear.svg',
+            width: 12,
+            height: 12
+        ),
+
+        help: (
+            image: 'icons/question-icon.svg',
+            width: 5,
+            height: 9
+        ),
+
+        talents: (
+            image: 'icons/talents.png',
+            width: 31,
+            height: 30
+        ),
+
+        achievements: (
+            image: 'icons/achievements.png',
+            width: 31,
+            height: 30
+        ),
+
+        minimail: (
+            image: 'icons/minimail.png',
+            width: 32,
+            height: 26
+        ),
+
+        myprofile : (
+            image: 'icons/myprofile.png',
+            width: 32,
+            height: 30
+        ),
+
+        myrooms: (
+            image: 'icons/myrooms.png',
+            width: 30,
+            height: 30
+        ),
+
+        clothes: (
+            image: 'icons/clothes.png',
+            width: 27,
+            height: 30
+        ),
+
+        forums: (
+            image: 'icons/forums.png',
+            width: 32,
+            height: 30
+        ),
+
+        carret-down-gray: (
+            image: 'icons/carret_down.png',
+            width: 10,
+            height: 5
+        ),
+
+        messages: (
+            image: 'icons/messages.png',
+            width: 17,
+            height: 19,
+            
+            small: (
+                image: 'icons/small_messages.png',
+                height: 20,
+                width: 17,
+
+                hover: (
+                    image: 'icons/small_messages_glow.png'
+                )
+            )
+        ),
+
+        gear-detailed: (
+            image: 'icons/gear_detailed.png',
+            width: 21,
+            height: 21,
+
+            hover: (
+                image: 'icons/gear_detailed_glow.png'
+            )
+        ),
+
+        zoom: (
+            image: 'icons/zoom.png',
+            width: 13,
+            height: 21,
+
+            hover: (
+                image: 'icons/zoom_glow.png'
+            )
+        ),
+
+        big-arrow-left: (
+            image: 'icons/big_arrow_left.png',
+            width: 30,
+            height: 30,
+        ),
+
+        arrow-right: (
+            image: 'icons/arrow_right.png',
+            width: 16,
+            height: 13,
+
+            hover: (
+                image: 'icons/arrow_right_glow.png'
+            )
+        ),
+
+        close: (
+            image: 'icons/close.svg',
+            width: 9,
+            height: 9
+        ),
+
+        close-thin: (
+            image: 'icons/close_thin.svg',
+            width: 7,
+            height: 7
+        ),
+
+        carret-right: (
+            image: 'icons/carret_right.svg',
+            width: 5,
+            height: 10
+        ),
+
+        carret-left: (
+            image: 'icons/carret_right.svg',
+            width: 5,
+            height: 10,
+            flipH: true
+        ),
+
+        carret-down: (
+            image: 'icons/carret_right.svg',
+            width: 5,
+            height: 10,
+            rotate: 90,
+        ),
+
+        carret-up: (
+            image: 'icons/carret_right.svg',
+            width: 5,
+            height: 10,
+            rotate: -90
+        ),
+
+        checkbox-check: (
+            image: 'icons/checkbox_check.png',
+            width: 14,
+            height: 12
+        ),
+
+        checkbox: (
+            image: 'icons/checkbox.png',
+            width: 12,
+            height: 12
+        ),
+
+        sign-heart: (
+            image: 'icons/sign-heart.png',
+            width: 15,
+            height: 13
+        ),
+
+        sign-skull: (
+            image: 'icons/sign-skull.png',
+            width: 12,
+            height: 12
+        ),
+
+        sign-exclamation: (
+            image: 'icons/sign-exclamation.png',
+            width: 7,
+            height: 17
+        ),
+
+        sign-football: (
+            image: 'icons/sign-football.png',
+            width: 20,
+            height: 20
+        ),
+
+        sign-yellowcard: (
+            image: 'icons/sign-yellowcard.png',
+            width: 11,
+            height: 19
+        ),
+
+        sign-redcard: (
+            image: 'icons/sign-redcard.png',
+            width: 11,
+            height: 19
+        ),
+
+        like: (
+            image: 'icons/like.png',
+            width: 20,
+            height: 22,
+
+            hover: (
+                image: 'icons/like_glow.png'
+            )
+        ),
+
+        relation-heart: (
+            image: 'icons/relationship-heart.png',
+            width: 13,
+            height: 13
+        ),
+
+        relation-friend: (
+            image: 'icons/relationship-friend.png',
+            width: 13,
+            height: 13
+        ),
+
+        relation-skull: (
+            image: 'icons/relationship-skull.png',
+            width: 13,
+            height: 13
+        ),
+
+        home: (
+            image: 'icons/home.svg',
+            width: 11,
+            height: 10
+        ),
+
+        room-plus: (
+            image: 'icons/room-plus.png',
+            width: 54,
+            height: 40
+        ),
+
+        room-swap: (
+            image: 'icons/room-swap.png',
+            width: 50,
+            height: 50
+        ),
+
+        storm: (
+            image: 'icons/storm.svg',
+            width: 6,
+            height: 10
+        ),
+
+        minus: (
+            image: 'icons/minus.svg',
+            width: 10,
+            height: 2
+        ),
+
+        plus: (
+            image: 'icons/plus.svg',
+            width: 9,
+            height: 9
+        ),
+
+        thumbnail: (
+            image: 'icons/thumbnail.svg',
+            width: 11,
+            height: 11
+        ),
+
+        search: (
+            image: 'icons/search.svg',
+            width: 9,
+            height: 9
+        ),
+
+        user: (
+            image: 'icons/user.png',
+            width: 7,
+            height: 8
+        ),
+
+        gender: (
+            image: 'icons/gender.png',
+            width: 19,
+            height: 22
+        ),
+
+        cap: (
+            image: 'icons/cap.png',
+            width: 32,
+            height: 22
+        ),
+
+        shirt: (
+            image: 'icons/shirt.png',
+            width: 30,
+            height: 22
+        ),
+
+        pants: (
+            image: 'icons/pants.png',
+            width: 19,
+            height: 22
+        ),
+
+        star: (
+            image: 'icons/star.png',
+            width: 29,
+            height: 22
+        ),
+
+        effect-plus: (
+            image: 'icons/effect-plus.png',
+            width: 23,
+            height: 22
+        ),
+
+        wardrobe-hc: (
+            image: 'icons/wardrobe-hc.png',
+            width: 14,
+            height: 11
+        ),
+
+        gender-girl: (
+            image: 'icons/gender-girl.png',
+            width: 18,
+            height: 27,
+
+            is-active-hover: true
+        ),
+
+        gender-boy: (
+            image: 'icons/gender-boy.png',
+            width: 21,
+            height: 21,
+
+            is-active-hover: true
+        ),
+
+        hair: (
+            image: 'icons/hair.png',
+            width: 21,
+            height: 21,
+
+            is-active-hover: true
+        ),
+
+        hat: (
+            image: 'icons/hat.png',
+            width: 29,
+            height: 25,
+
+            is-active-hover: true
+        ),
+
+        head-plus: (
+            image: 'icons/head-plus.png',
+            width: 29,
+            height: 25,
+
+            is-active-hover: true
+        ),
+
+        glasses: (
+            image: 'icons/glasses.png',
+            width: 29,
+            height: 25,
+
+            is-active-hover: true
+        ),
+
+        mustache: (
+            image: 'icons/mustache.png',
+            width: 29,
+            height: 25,
+
+            is-active-hover: true
+        )
+    );
+
+    @each $iconName, $iconData in $icons {
+
+        &.icon-#{$iconName}{
+
+            &:before {
+                background-image: url('/#{map-get($iconData, "image")}');
+                background-repeat: no-repeat;
+                width: map-get($iconData, "width") + unquote("px");
+                height: map-get($iconData, "height") + unquote("px");
+
+                @if(map-has-key($iconData, "flipH")) {
+                    @include flipH;
+                }
+
+                @if(map-has-key($iconData, "flipHV")) {
+                    @include flipHV;
+                }
+
+                @if(map-has-key($iconData, "rotate")) {
+                    transform: rotate(map-get($iconData, "rotate") + unquote("deg"));
+                }
+            }
+
+            @if (map-has-key($iconData, "small")) {
+
+                $smallData: map-get($iconData, "small");
+
+                &.icon-small {
+
+                    &:before {
+                        background-image: url('/#{map-get($smallData, "image")}');
+                        width: map-get($smallData, "width") + unquote("px");
+                        height: map-get($smallData, "height") + unquote("px");
+                    }
+
+                    @if(map-has-key($smallData, "hover")) {
+                            
+                        $smallHoverData: map-get($smallData, "hover");
+
+                        &:hover {
+                            cursor: pointer;
+
+                            &:before {
+                                background-image: url('/#{map-get($smallHoverData, "image")}');
+                            }
+                        }
+                    }
+                }
+            }
+
+            @if (map-has-key($iconData, "hover")) {
+                &:hover {
+                    cursor: pointer;
+                    
+                    &:before {
+                        background-image: url('/#{map-get(map-get($iconData, "hover"), "image")}');
+                    }
+                }
+            }
+
+            @if (map-has-key($iconData, "is-active") and map-get($iconData, "is-active") == true) {
+
+                $imageName: map-get($iconData, "image");
+                $positionExtension: str-index($imageName, ".");
+
+                &.is-active:before {
+                    background-image: url('/#{str-insert($imageName, "-active", $positionExtension)}');
+                }
+            }
+
+            @if (map-has-key($iconData, "is-active-hover") and map-get($iconData, "is-active-hover") == true) {
+
+                $imageName: map-get($iconData, "image");
+                $positionExtension: str-index($imageName, ".");
+
+                &.is-active:before, &:not(.is-active):hover:before {
+                    background-image: url('/#{str-insert($imageName, "-active", $positionExtension)}');
+                }
+            }
+        }
+    }
+
+    &.icon-message{
+        
+        &.is-unsee::before{
+            background-image: url('/r63b/toolbar/icons/message_unsee.gif')
+        }
+
+		&:before{
+			background-image: url('/r63b/toolbar/icons/message.png');
+			width: 26px;
+            height: 31px;
+        }
+    }
+}

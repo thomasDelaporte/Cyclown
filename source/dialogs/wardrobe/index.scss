@@ -1,0 +1,84 @@
+.dialog.wardrobe {
+    height: 523px;
+
+    .dialog-wrapper {
+        flex-direction: row;
+    }
+
+    .wardrobe-wrapper {
+        width: 490px;
+
+        .wardrobe-header {
+            height: 110px;
+            flex-direction: column;
+
+            h2 {
+                margin: auto;
+            }
+
+            .wardrobe-nav {
+                display: flex;
+                flex-direction: row;
+                padding: 0 10px;
+
+                .dialog-tabs-subaction {
+                    margin-left: 10px;
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .wardrobe-wrapper {
+
+            .wardrobe-tabs {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                &>li:not(:last-child){
+                    margin-right: 10px;
+                }
+            }
+
+            .wardrobe-content {
+                display: grid;
+                grid-template-columns: auto 125px;
+                grid-column-gap: 10px;
+
+                .wardrobe-params {
+
+                    .wardrobe-clothes {
+
+                    }
+
+                    .wardrobe-colors {
+                        height: 100px;
+
+                        .scroll-wrapper-content {
+                            display: grid;
+                            grid-template-columns: repeat(20, 1fr);
+                            grid-column-gap: 2px;
+                            grid-row-gap: 4px;
+                            padding-top: 1px;
+    
+                            &>* {
+                                height: 17px;
+                                border-radius: 2px;
+                                border: 2px solid #736d67;
+                                box-shadow: 0 2px 0 0 #24221d, inset 0 -1px 0 0 rgba(0, 0, 0, .1);
+                                cursor: pointer;
+
+                                &.is-active, &:not(.is-active):hover {
+                                    border-color: #a69d95;
+                                    box-shadow: 0 3px 0 0 #24221d, inset 0 1px 0 0 rgba(0, 0, 0, .1);
+                                    position: relative;
+                                    top: -1px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
