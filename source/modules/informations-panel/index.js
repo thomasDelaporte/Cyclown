@@ -1,4 +1,5 @@
 import React from 'react';
+import Progress from '../../components/progress';
 
 export default class InformationsPanel extends React.Component {
 
@@ -17,7 +18,7 @@ export default class InformationsPanel extends React.Component {
                         <h5>Bonus bag, 1 every 120 credits!</h5>
 
                         <div className="offer-content-infos">
-                            <progress className="progressbar" value="10" max="100" data-label="Only 108/120 credits to go!"></progress>
+                            <Progress className="progressbar" value="108" max="120" label="Only 108/120 credits to go!" />
                             <button className="btn btn-illumina">Get credits</button>
                         </div>
                     </div>

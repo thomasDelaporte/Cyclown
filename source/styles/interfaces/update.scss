@@ -1,0 +1,23 @@
+*[update] {
+    position: relative;
+    
+    &:after {
+        content: attr(update);
+        position: absolute;
+        top: 0;
+        right: -3px;
+        height: 17px;
+        min-width: 17px;
+        background-color: #ac1d19;
+        color: #fff;
+        border-radius: 5px;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 10px;
+        text-align: center;
+        line-height: 15px;
+        border: 1px solid #000;
+        box-shadow: inset 0 0 0 1px #ed2823, 0 1px 0 0 #000;
+        z-index: 1;
+    }
+}

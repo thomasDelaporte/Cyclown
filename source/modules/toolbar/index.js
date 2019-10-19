@@ -51,8 +51,7 @@ export default class Toolbar extends React.Component {
 
                         {!this.state.isActionsOpen && <span className="icon icon-inventory"></span>}
 
-                        <figure className="user" onClick={this.toggleUserActions.bind(this)}>
-                            <i className="notification">3</i>
+                        <figure className="user" onClick={this.toggleUserActions.bind(this)} update="3">
                             <img src='https://www.habbo.com/habbo-imaging/avatarimage?hb=image&user=EZ-C&headonly=0&direction=2&head_direction=2&action=&gesture=&size=m' />
                         </figure>
 
@@ -73,9 +72,7 @@ export default class Toolbar extends React.Component {
                 <div className="toolbar-friends">
 
                     <div className="toolbar-icons-content">
-                        <span className="icon icon-friendall">
-                            <i className="notification">3</i>
-                        </span>
+                        <span className="icon icon-friendall" update="3"></span>
                         <span className="icon icon-friendsearch"></span>
                         <span className={"icon icon-message" + (false ? " is-unsee" : '')}></span>
                     </div>

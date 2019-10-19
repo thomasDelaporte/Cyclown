@@ -1,0 +1,31 @@
+.progressbar{
+    height: 23px;
+    line-height: 17px;
+    padding: 2px;
+    border: 1px solid #000;
+    background: #5a534f;
+    box-shadow: inset 0 0 0 2px #fff;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+
+    span {
+        position: absolute;
+        top: 2px; bottom: 2px; left: 2px;
+        background-color: #00b5c1; 
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        border-right: 1px solid rgba(0, 0, 0, .5);
+    }
+
+    &:after {
+        content: attr(label);
+        display: block;
+        position: relative;
+        text-align: center;
+        font-weight: bold;
+        text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+        color: #fff;
+    }
+}
+

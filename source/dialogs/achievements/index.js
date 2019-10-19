@@ -13,7 +13,7 @@ export default class Achievements extends React.PureComponent {
     render(){
         return (
             <Dialog title="Achievements" className="achievements">
-                <AchievementsCategory />
+                <AchievementsMain />
             </Dialog>
         )
     }

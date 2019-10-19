@@ -1,4 +1,5 @@
 import React from 'react';
+import Progress from '../../../components/progress';
 
 export default class AchievementsMain extends React.PureComponent {
 
@@ -10,7 +11,7 @@ export default class AchievementsMain extends React.PureComponent {
                     <li>
                         <h5>Your Profile</h5>
 
-                        <div className="achievements-icon-item">
+                        <div className="achievements-icon-item" update="5">
                             <img src="https://images.habbo.com/c_images/Quests/achcategory_identity_active.png" />
                             <span>30/86</span>
                         </div>
@@ -80,8 +81,7 @@ export default class AchievementsMain extends React.PureComponent {
                     </li>
                 </ul>
 
-                <progress className="progressbar achievements-total" value="108" max="1335" 
-                    data-label="Total Achievements: 108/1335"></progress>
+                <Progress className="achievements-total" value="108" max="1335" label="Total Achievements: 108/1335" />
 
                 <p className="achievements-score">Achievement score: 1914</p>
             </div>

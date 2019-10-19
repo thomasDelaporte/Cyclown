@@ -1,5 +1,6 @@
 import React from 'react';
 import Scrollbar from '../../../components/scrollbar';
+import Progress from '../../../components/progress';
 
 export default class AchievementsCategory extends React.PureComponent {
 
@@ -44,8 +45,7 @@ export default class AchievementsCategory extends React.PureComponent {
                             <h4>True You !</h4>
                             <small>Level 0/1</small>
 
-                            <progress className="progressbar" value="0" max="1" 
-                                data-label="0/1 to the next level"></progress>
+                            <Progress className="progressbar" value="0" max="1" label="0/1 to the next level" />
                         </div>
                     </div>
                 </div>
