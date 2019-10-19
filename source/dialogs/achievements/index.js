@@ -5,12 +5,15 @@ import AchievementsMain from './main/';
 import AchievementsCategory from './category/';
 
 export default class Achievements extends React.PureComponent {
+
+    constructor(props){
+        super(props);
+    }
     
     render(){
         return (
             <Dialog title="Achievements" className="achievements">
-                
-                <AchievementsMain />
+                <AchievementsCategory />
             </Dialog>
         )
     }
