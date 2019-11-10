@@ -1,0 +1,5 @@
+@function url-insert($baseUrl, $insertString) {
+
+    $positionExtension: str-index($baseUrl, ".");
+    @return str-insert($baseUrl, $insertString, $positionExtension)
+}

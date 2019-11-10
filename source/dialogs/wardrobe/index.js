@@ -17,12 +17,12 @@ export default class Wardrobe extends React.PureComponent {
                         <nav className="wardrobe-nav">
 
                             <ul className="dialog-tabs">
-                                <li className="is-active"><i className="icon icon-gender"></i></li>
+                                <li className="is-active"><i className="icon icon-puppet"></i></li>
                                 <li><i className="icon icon-cap"></i></li>
                                 <li><i className="icon icon-shirt"></i></li>
                                 <li><i className="icon icon-pants"></i></li>
                                 <li><i className="icon icon-star"></i></li>
-                                <li><i className="icon icon-effect-plus"></i></li>
+                                <li><i className="icon icon-puppet-plus"></i></li>
                             </ul>
 
                             <button className="dialog-tabs-subaction btn btn-r63b">
@@ -48,7 +48,9 @@ export default class Wardrobe extends React.PureComponent {
 
                                 <Scrollbar className="wardrobe-colors">
                                     <span style={{backgroundColor: '#bebebe'}}></span>
-                                    <span style={{backgroundColor: '#816434'}}></span>
+                                    <span className="is-active" style={{backgroundColor: '#816434'}}>
+                                        <i className="icon icon-small icon-hc"></i>
+                                    </span>
                                     <span style={{backgroundColor: '#5c4b32'}}></span>
                                     <span style={{backgroundColor: '#c79721'}}></span>
                                     <span style={{backgroundColor: '#ddd59d'}}></span>

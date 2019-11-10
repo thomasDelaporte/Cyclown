@@ -1,4 +1,4 @@
-const Path = require('path');
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = (env, argv) => {
@@ -6,12 +6,13 @@ module.exports = (env, argv) => {
     return {
         target: 'web',
 
-        context: Path.resolve(__dirname),
+        context: path.resolve(__dirname),
 
         entry: './source/index.js',
 
         output: {
-            filename: 'ui.min.js',
+            path: path.resolve(__dirname, './public'),
+            filename: './ui.min.js',
         },
 
         plugins: [
@@ -24,8 +25,8 @@ module.exports = (env, argv) => {
 
         devServer: {
             compress: true,
-			historyApiFallback: true,
-			contentBase: Path.resolve(__dirname, './web-gallery'),
+            historyApiFallback: true,
+            contentBase: path.resolve(__dirname, 'public'),
 			port: 8083
 		},
 		
@@ -54,11 +55,26 @@ module.exports = (env, argv) => {
 				{
                     test: /\.(woff(2)?|ttf|eot)$/,
                     exclude: /(node_modules|bower_components)/,
-	                use: [
-						'file-loader'
-					]
-	            }
+	                use: {
+                        loader: 'file-loader',
+                        options: {
+                            outputPath: 'fonts'
+                        }
+                    }
+                },
+                {
+                    test: /\.(png|svg|jpg|gif)$/,
+                    exclude: /(node_modules|bower_components)/,
+                    use: {
+                        loader: 'url-loader'
+                    }
+                },
 			]
         }
     }
 }
+
+/*,
+                        options: {
+                            outputPath: 'images'
+                        }*/

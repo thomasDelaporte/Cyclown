@@ -142,7 +142,13 @@
         hc: (
             image: 'icons/hc.png',
             width: 15,
-            height: 15
+            height: 15,
+
+            small: (
+                image: 'icons/hc-small.png',
+                width: 10,
+                height: 9
+            )
         ),
 
         exit: (
@@ -432,8 +438,8 @@
             height: 8
         ),
 
-        gender: (
-            image: 'icons/gender.png',
+        puppet: (
+            image: 'icons/puppet.png',
             width: 19,
             height: 22
         ),
@@ -462,8 +468,8 @@
             height: 22
         ),
 
-        effect-plus: (
-            image: 'icons/effect-plus.png',
+        puppet-plus: (
+            image: 'icons/puppet_plus.png',
             width: 23,
             height: 22
         ),
@@ -475,7 +481,7 @@
         ),
 
         gender-girl: (
-            image: 'icons/gender-girl.png',
+            image: 'icons/gender_girl.png',
             width: 18,
             height: 27,
 
@@ -483,12 +489,16 @@
         ),
 
         gender-boy: (
-            image: 'icons/gender-boy.png',
+            image: 'icons/gender_boy.png',
             width: 21,
             height: 21,
 
             is-active-hover: true
-        ),
+        )
+    );
+
+    /*
+    ,
 
         hair: (
             image: 'icons/hair.png',
@@ -528,15 +538,13 @@
             height: 25,
 
             is-active-hover: true
-        )
-    );
-
+        )*/
     @each $iconName, $iconData in $icons {
 
         &.icon-#{$iconName}{
 
             &:before {
-                background-image: url('/#{map-get($iconData, "image")}');
+                background-image: url('assets/web-gallery/#{map-get($iconData, "image")}');
                 background-repeat: no-repeat;
                 width: map-get($iconData, "width") + unquote("px");
                 height: map-get($iconData, "height") + unquote("px");
@@ -558,27 +566,36 @@
 
                 $smallData: map-get($iconData, "small");
 
-                &.icon-small {
+                @if type-of($smallData) == 'map' {
+                    &.icon-small {
 
-                    &:before {
-                        background-image: url('/#{map-get($smallData, "image")}');
-                        width: map-get($smallData, "width") + unquote("px");
-                        height: map-get($smallData, "height") + unquote("px");
-                    }
-
-                    @if(map-has-key($smallData, "hover")) {
-                            
-                        $smallHoverData: map-get($smallData, "hover");
-
-                        &:hover {
-                            cursor: pointer;
-
-                            &:before {
-                                background-image: url('/#{map-get($smallHoverData, "image")}');
+                        &:before {
+                            background-image: url('assets/web-gallery/#{map-get($smallData, "image")}');
+                            width: map-get($smallData, "width") + unquote("px");
+                            height: map-get($smallData, "height") + unquote("px");
+                        }
+    
+                        @if(map-has-key($smallData, "hover")) {
+                                
+                            $smallHoverData: map-get($smallData, "hover");
+    
+                            &:hover {
+                                cursor: pointer;
+    
+                                &:before {
+                                    background-image: url('assets/web-gallery/#{map-get($smallHoverData, "image")}');
+                                }
                             }
                         }
                     }
+                } @else {
+
+                    &.icon-small:before {
+                        background-image: url('assets/web-gallery/#{url-insert(map-get($iconData, "image"), "-small")}');
+                    }
                 }
+
+                
             }
 
             @if (map-has-key($iconData, "hover")) {
@@ -586,7 +603,7 @@
                     cursor: pointer;
                     
                     &:before {
-                        background-image: url('/#{map-get(map-get($iconData, "hover"), "image")}');
+                        background-image: url('assets/web-gallery/#{map-get(map-get($iconData, "hover"), "image")}');
                     }
                 }
             }
@@ -596,8 +613,10 @@
                 $imageName: map-get($iconData, "image");
                 $positionExtension: str-index($imageName, ".");
 
+                //str-insert($imageName, "-active", $positionExtension)
+
                 &.is-active:before {
-                    background-image: url('/#{str-insert($imageName, "-active", $positionExtension)}');
+                    background-image: url('assets/web-gallery/#{url-insert($imageName, "-active")}');
                 }
             }
 
@@ -607,7 +626,7 @@
                 $positionExtension: str-index($imageName, ".");
 
                 &.is-active:before, &:not(.is-active):hover:before {
-                    background-image: url('/#{str-insert($imageName, "-active", $positionExtension)}');
+                    background-image: url('assets/web-gallery/#{str-insert($imageName, "-active", $positionExtension)}');
                 }
             }
         }
@@ -616,11 +635,11 @@
     &.icon-message{
         
         &.is-unsee::before{
-            background-image: url('/r63b/toolbar/icons/message_unsee.gif')
+            background-image: url('assets/web-gallery/r63b/toolbar/icons/message_unsee.gif')
         }
 
 		&:before{
-			background-image: url('/r63b/toolbar/icons/message.png');
+			background-image: url('assets/web-gallery/r63b/toolbar/icons/message.png');
 			width: 26px;
             height: 31px;
         }
