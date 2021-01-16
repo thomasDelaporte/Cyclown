@@ -13,7 +13,7 @@ export default class InformationsPanel extends React.Component {
             <div className="informations-panel">
                 
                 <div className="informations-offer">
-                    <img src="web-gallery/web-promo/smallpromo_bonusbag19_1.png" />
+                    <img src={require('../../assets/web-gallery/web-promo/smallpromo_bonusbag19_1.png')} />
 
                     <div className="offer-content">
                         <h5>Bonus bag, 1 every 120 credits!</h5>
@@ -28,7 +28,7 @@ export default class InformationsPanel extends React.Component {
                 <div className="informations-news">
 
                     <div className="news-item">
-                        <img src="web-gallery/web-promo/spromo_Pastel_Bundle.png" />
+                        <img src={require('../../assets/web-gallery/web-promo/spromo_Pastel_Bundle.png')} />
 
                         <div className="news-item-content">
                             <h4>NEW Pastel Bundle!</h4>
@@ -48,7 +48,7 @@ export default class InformationsPanel extends React.Component {
                     </div>
 
                     <div className="news-item">
-                        <img src="web-gallery/web-promo/spromo_may19_commask.png" />
+                        <img src={require('../../assets/web-gallery/web-promo/spromo_may19_commask.png')} />
                         
                         <div className="news-item-content">
                             <h4>RARE Theatrical Masks!</h4>
