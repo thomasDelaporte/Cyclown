@@ -11,3 +11,7 @@ export default {
 export const functiontest = () => {
   return <h1>ah</h1>
 }
+
+export const ok = () => {
+  return <button>ok</button>
+}
