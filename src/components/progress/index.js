@@ -4,6 +4,7 @@ export default class Progress extends React.PureComponent {
 
     render(){
 
+        console.log("render progress");
         const percentage = (this.props.value * 100 / this.props.max) + '%';
 
         return (
