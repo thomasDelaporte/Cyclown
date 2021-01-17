@@ -19,7 +19,7 @@
     }
 
     &:after {
-        content: attr(label);
+        content: attr(data-label);
         display: block;
         position: relative;
         text-align: center;

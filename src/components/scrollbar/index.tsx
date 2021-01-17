@@ -1,7 +1,15 @@
 import React from 'react';
 import ResizeObserver from 'resize-observer-polyfill';
 
-export default class Scrollbar extends React.PureComponent {
+export default class Scrollbar extends React.PureComponent<any, any> {
+
+    private content;
+    private trackRef;
+    private thumbRef;
+
+    private trackHeight;
+    private scrollMaxY;
+    private thumbMaxY;
 
     constructor(props){
         super(props);

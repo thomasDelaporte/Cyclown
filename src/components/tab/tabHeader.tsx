@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class TabHeader extends React.PureComponent {
+export default class TabHeader extends React.PureComponent<any, any> {
 
     constructor(props){
         super(props);

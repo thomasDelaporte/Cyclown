@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import PropTypes from 'prop-types';
 
-export default class Draggable extends React.PureComponent {
+interface DraggableProps {
+    children: (styleDragable: any, startDraging: any) => ReactNode,
+    defaultPos?: [number, number]
+}
+
+export default class Draggable extends React.PureComponent<DraggableProps, any> {
 
     constructor(props){
         super(props);
@@ -49,9 +54,4 @@ export default class Draggable extends React.PureComponent {
     render(){
         return this.props.children({ top: this.state.y, left: this.state.x }, this.startDraging);
     }
-
 }
-
-Draggable.propTypes = {
-    children: PropTypes.func.isRequired,
-};

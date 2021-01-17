@@ -14,6 +14,10 @@ module.exports = (env, args) => {
             filename: './ui.min.js',
         },
 
+        resolve: {
+            extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],
+        },
+
         plugins: [
             new HtmlWebpackPlugin({
                 template: './src/index.ejs'  

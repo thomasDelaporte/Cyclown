@@ -7,11 +7,10 @@ import WebAction from '../../modules/web-action';
 
 import Navigator from '../../dialogs/navigator';
 import Inventory from '../../dialogs/inventory';
-import Camera from '../../dialogs/camera';
 import Wardrobe from '../../dialogs/wardrobe';
 import Achievements from '../../dialogs/achievements';
 
-class Interface extends React.Component {
+class Interface extends React.Component<any, any> {
     
     render(){
 

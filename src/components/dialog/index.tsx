@@ -2,7 +2,7 @@ import React from 'react';
 
 import Draggable from '../draggable';
 
-export default class Dialog extends React.PureComponent {
+export default class Dialog extends React.PureComponent<any, any> {
 
     constructor(props){
         super(props);
