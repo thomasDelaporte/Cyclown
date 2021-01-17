@@ -7,7 +7,7 @@ module.exports = (env, args) => {
         
         context: path.resolve(__dirname),
 
-        entry: './src/index.js',
+        entry: './src/index.ts',
 
         output: {
             path: path.resolve(__dirname, './build'),
@@ -23,7 +23,7 @@ module.exports = (env, args) => {
         module: {
             rules: [
 				{
-                    test: /\.(js|jsx)$/,
+                    test: /\.([jt]s|[jt]sx)$/,
                     exclude: /node_modules/,
                     use: {
                         loader: 'babel-loader'
