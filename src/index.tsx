@@ -10,7 +10,7 @@ import Hotel from './states/hotel';
 import Loading from './states/loading';
 import Room from './states/room';
 
-class Client extends React.Component {
+class Client extends React.Component<any, any> {
 
     constructor(props){
         super(props);
@@ -27,8 +27,11 @@ class Client extends React.Component {
     }
 
     render(){
-        if (!this.state.isLoaded) return <Loading onFinishLoading={this.onFinishLoading.bind(this)} />
-        else return (
+
+        if (!this.state.isLoaded) 
+            return <Loading onFinishLoading={this.onFinishLoading.bind(this)} />
+            
+        return (
             <BrowserRouter>
                 <Interface>
                     <Switch location={this.props.location}>
