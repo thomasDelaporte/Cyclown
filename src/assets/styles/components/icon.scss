@@ -544,7 +544,7 @@
         &.icon-#{$iconName}{
 
             &:before {
-                background-image: url('assets/web-gallery/#{map-get($iconData, "image")}');
+                background-image: url('../web-gallery/#{map-get($iconData, "image")}');
                 background-repeat: no-repeat;
                 width: map-get($iconData, "width") + unquote("px");
                 height: map-get($iconData, "height") + unquote("px");
@@ -570,7 +570,7 @@
                     &.icon-small {
 
                         &:before {
-                            background-image: url('assets/web-gallery/#{map-get($smallData, "image")}');
+                            background-image: url('../web-gallery/#{map-get($smallData, "image")}');
                             width: map-get($smallData, "width") + unquote("px");
                             height: map-get($smallData, "height") + unquote("px");
                         }
@@ -583,7 +583,7 @@
                                 cursor: pointer;
     
                                 &:before {
-                                    background-image: url('assets/web-gallery/#{map-get($smallHoverData, "image")}');
+                                    background-image: url('../web-gallery/#{map-get($smallHoverData, "image")}');
                                 }
                             }
                         }
@@ -591,7 +591,7 @@
                 } @else {
 
                     &.icon-small:before {
-                        background-image: url('assets/web-gallery/#{url-insert(map-get($iconData, "image"), "-small")}');
+                        background-image: url('../web-gallery/#{url-insert(map-get($iconData, "image"), "-small")}');
                     }
                 }
 
@@ -603,7 +603,7 @@
                     cursor: pointer;
                     
                     &:before {
-                        background-image: url('assets/web-gallery/#{map-get(map-get($iconData, "hover"), "image")}');
+                        background-image: url('../web-gallery/#{map-get(map-get($iconData, "hover"), "image")}');
                     }
                 }
             }
@@ -616,7 +616,7 @@
                 //str-insert($imageName, "-active", $positionExtension)
 
                 &.is-active:before {
-                    background-image: url('assets/web-gallery/#{url-insert($imageName, "-active")}');
+                    background-image: url('../web-gallery/#{url-insert($imageName, "-active")}');
                 }
             }
 
@@ -626,7 +626,7 @@
                 $positionExtension: str-index($imageName, ".");
 
                 &.is-active:before, &:not(.is-active):hover:before {
-                    background-image: url('assets/web-gallery/#{str-insert($imageName, "-active", $positionExtension)}');
+                    background-image: url('../web-gallery/#{str-insert($imageName, "-active", $positionExtension)}');
                 }
             }
         }
@@ -635,11 +635,11 @@
     &.icon-message{
         
         &.is-unsee::before{
-            background-image: url('assets/web-gallery/r63b/toolbar/icons/message_unsee.gif')
+            background-image: url('../web-gallery/r63b/toolbar/icons/message_unsee.gif')
         }
 
 		&:before{
-			background-image: url('assets/web-gallery/r63b/toolbar/icons/message.png');
+			background-image: url('../web-gallery/r63b/toolbar/icons/message.png');
 			width: 26px;
             height: 31px;
         }

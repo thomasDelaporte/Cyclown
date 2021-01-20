@@ -7,7 +7,7 @@ module.exports = (env, args) => {
         
         context: path.resolve(__dirname),
 
-        entry: './src/index.tsx',
+        entry: './src/index.ts',
 
         output: {
             path: path.resolve(__dirname, './build'),

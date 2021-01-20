@@ -1,15 +1,14 @@
 import React from 'react';
 
-export default class Progress extends React.PureComponent<any, any> {
+import './index.scss';
 
-    render(){
+export default function progress(props) {
 
-        const percentage = (this.props.value * 100 / this.props.max) + '%';
+    const percentage = (props.value * 100 / props.max) + '%';
 
-        return (
-            <div className={"progressbar" + (this.props.className ? " " + this.props.className : '')} data-label={this.props.label}>
-                <span style={{width: percentage}}></span>
-            </div>
-        )
-    }
+    return (
+        <div className={"progressbar" + (props.className ? " " + props.className :  '')} data-label={props.label}>
+            <span style={{width: percentage}}></span>
+        </div>
+    )
 }

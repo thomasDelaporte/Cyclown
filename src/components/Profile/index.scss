@@ -1,0 +1,15 @@
+@import '../../assets/styles/foundation/variables.scss';
+
+.profile-panel{
+    width: $rightCol-width;
+
+    @import './wallet/index';
+
+    .notifications{
+        margin-top: 10px;
+
+        &>*:not(:last-child){
+            margin-bottom: 8px;
+        }
+    }
+}
