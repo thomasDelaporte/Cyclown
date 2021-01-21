@@ -2,6 +2,8 @@ import React from 'react';
 
 import ContextMenu from '../';
 
+import './index.scss';
+
 export default class AvatarContextMenu extends React.PureComponent<any, any> {
 
     constructor(props){
