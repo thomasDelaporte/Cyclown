@@ -12,7 +12,7 @@ export default class AchievementsMain extends React.PureComponent {
                     <li>
                         <h5>Your Profile</h5>
 
-                        <div className="achievements-icon-item" update="5">
+                        <div className="achievements-icon-item" data-update="5">
                             <img src="https://images.habbo.com/c_images/Quests/achcategory_identity_active.png" />
                             <span>30/86</span>
                         </div>
