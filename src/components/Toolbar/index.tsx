@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Friends from './friends';
+import Friends from './Friends';
+import FriendSlot from './FriendSlot';
 
 import './index.scss';
 
@@ -87,4 +88,9 @@ export default class Toolbar extends React.Component<any, any> {
             </section>
         );
 	}
+}
+
+export {
+    Friends,
+    FriendSlot
 }

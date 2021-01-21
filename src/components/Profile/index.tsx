@@ -1,24 +1,21 @@
 import React from 'react';
 
-import Wallet from './wallet';
+import Wallet from './Wallet';
 
 import './index.scss';
 
-export default class ProfilePanel extends React.Component {
+export default function Profile() {
+    return (
+        <div className="profile-panel">
+            
+            <Wallet />
 
-    render(){
-        return (
-            <div className="profile-panel">
+            <div className="notifications">
                 
-                <Wallet />
-
-                <div className="notifications">
-                    
-                    <div className="frame-200">a</div>
-                    <div className="frame-200">b</div>
-                    <div className="frame-200">c</div>
-                </div>
+                <div className="frame-200">a</div>
+                <div className="frame-200">b</div>
+                <div className="frame-200">c</div>
             </div>
-        )
-    }
+        </div>
+    )
 }

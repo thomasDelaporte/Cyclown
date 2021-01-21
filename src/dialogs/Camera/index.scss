@@ -1,0 +1,17 @@
+.dialog.camera {
+    background-color: #292a2b;
+    width: 340px;
+    height: 462px;
+
+    .dialog-header {
+        background-color: transparent;
+        box-shadow: none;
+        border-bottom: none;
+    }
+
+    .camera-content {
+        height: 300px;
+        background: red;
+        clip: rect(10px, 290px, 190px, 10px);
+    }
+}

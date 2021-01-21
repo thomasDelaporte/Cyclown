@@ -15,7 +15,7 @@ import RoomDetails from '@components/RoomDetails';
 // import BotInfos from '../../modules/click-infos/bot';
 
 import ScrollBar from '@components/Scrollbar';
-import ChatHistory from '@components/ChatHistory';
+import ChatHistory from '@components/ChatLog';
 
 import './index.scss';
 

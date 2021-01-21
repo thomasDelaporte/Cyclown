@@ -1,7 +1,21 @@
 import React from 'react';
-import FriendSlot from '../friendSlot';
 
-export default class Friends extends React.PureComponent {
+import FriendSlot from '../FriendSlot';
+
+import './index.scss';
+
+export interface FriendsProps {
+    friends: string[]
+}
+
+export interface FriendsState {
+    currentPage: number,
+    friendsPerPage: number,
+    findingNewFriendsCount: number,
+    slotIndex: number
+}
+
+export default class Friends extends React.PureComponent<FriendsProps, FriendsState> {
 
     constructor(props) {
         super(props);

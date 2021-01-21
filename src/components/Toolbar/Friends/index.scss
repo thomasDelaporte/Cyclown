@@ -1,0 +1,24 @@
+.toolbar-friends {
+    border-left: 1px solid #454442;
+
+    .toolbar-friends-content{
+        padding: 0;
+        align-items: flex-end;
+        height: 35px;
+    }
+}
+
+.toolbar-friends-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 14px;
+
+    .btn-history-previous {
+        border-right-width: 0;
+    }
+
+    .btn-history-next {
+        border-left-width: 0;
+    }
+}

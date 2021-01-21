@@ -1,4 +1,4 @@
-import Toolbar from './';
+import Toolbar, { Friends } from './';
 
 export default {
     title: 'Components/Toolbar',
@@ -6,3 +6,4 @@ export default {
 }
 
 export const Default = () => <Toolbar />
+export const DefaultFriends = () => <Friends friends={['Hello']} />
