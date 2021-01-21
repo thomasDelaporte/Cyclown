@@ -2,7 +2,7 @@
     position: relative;
     
     &:after {
-        content: attr(update);
+        content: attr(data-update);
         position: absolute;
         top: 0;
         right: -3px;
