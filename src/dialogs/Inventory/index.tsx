@@ -40,20 +40,20 @@ export default class Inventory extends React.PureComponent<any, any> {
                         <Scrollbar>
                             <ul className="items-list">
                                 <li>
-                                    <img src="https://content.puhekupla.com/img/furni/small_petfood26.png" />
+                                    <img src={ require('../../assets/web-gallery/inventory/small_rainbow_c21_crackable1.png') } />
                                     <span>2</span>
                                 </li>
-                                <li className="is-active"><img src="https://content.puhekupla.com/img/furni/small_bar_basic.png" /></li>
-                                <li><img src="https://content.puhekupla.com/img/furni/small_market_c19_signboard.png" /></li>
-                                <li><img src="https://content.puhekupla.com/img/furni/small_suncity_c19_perfumeshop.png" /></li>
-                                <li><img src="https://content.puhekupla.com/img/furni/small_suncity_c19_gazebo.png" /></li>
-                                <li><img src="https://content.puhekupla.com/img/furni/small_xmas08_hole.png" /></li>
-                                <li><img src="https://content.puhekupla.com/img/furni/small_cmp_fish_b.png" /></li>
+                                <li className="is-active"><img src={ require('../../assets/web-gallery/inventory/small_vwave_c21_barstool.png') } /></li>
+                                <li><img src={ require('../../assets/web-gallery/inventory/small_vwave_c21_bench.png') } /></li>
+                                <li><img src={ require('../../assets/web-gallery/inventory/small_vwave_c21_buildings.png') } /></li>
+                                <li><img src={ require('../../assets/web-gallery/inventory/small_vwave_c21_buildings.png') } /></li>
+                                <li><img src={ require('../../assets/web-gallery/inventory/small_vwave_c21_dumpster.png') } /></li>
+                                <li><img src={ require('../../assets/web-gallery/inventory/small_vwave_c21_glitchrailcrnr.png') } /></li>
                             </ul>
                         </Scrollbar>
                         
                         <div className="inventory-content-render">
-
+                        
                         </div>
                     </div>
                 </div>

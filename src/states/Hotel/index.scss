@@ -9,4 +9,11 @@
 	background-position: left bottom, right bottom, 125px top;
     background-size: auto, auto, auto, 1% 100%;
     image-rendering: pixelated;
+    position: relative;
+
+    .informations-panel {
+        position: absolute;
+        left: 310px;
+        top: 32px;
+    }
 }

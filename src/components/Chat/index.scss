@@ -8,9 +8,6 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    //left: 50%;
-    //bottom: 80px;
-    //transform: translateX(-50%);
     z-index: 100;
 
     .chat-style-picker {
@@ -26,10 +23,10 @@
             border-bottom-right-radius: 0;
             display: flex;
             align-items: center;
+            justify-content: space-around;
             height: 100%;
             z-index: 1;
             cursor: pointer;
-
             padding: 0 8px;
             box-shadow: inset 0 0 0 2px #b2b2b2;
             position: relative;

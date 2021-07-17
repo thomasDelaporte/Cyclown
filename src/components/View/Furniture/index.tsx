@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../index.scss';
+import './index.scss';
 
 export default class FurnitureView extends React.PureComponent<any, any> {
 
@@ -17,7 +17,7 @@ export default class FurnitureView extends React.PureComponent<any, any> {
                         </button>
                     </div>
 
-                    <img src="https://s3.eu-north-1.amazonaws.com/fuusio/furni/golden_apple__2.png" />
+                    <img src={ require('../../../assets/web-gallery/golden_apple.png') } />
 
                     <div className="frame-footer">
 
