@@ -42,6 +42,9 @@ export default class Scrollbar extends React.PureComponent<any, any> {
 
     computeData = (callback = null) => {
 
+        if( this.trackRef == null || this.content == null)
+            return;
+
         this.trackHeight = this.trackRef.clientHeight;
         this.scrollMaxY = this.content.scrollHeight - this.content.clientHeight;
 
@@ -83,7 +86,7 @@ export default class Scrollbar extends React.PureComponent<any, any> {
 
     visualizationScrolling = (e) => {
         
-        const thumbTop = this.thumbMaxY * this.content.scrollTop / this.scrollMaxY;
+        const thumbTop = (this.scrollMaxY == 0) ? 0 : this.thumbMaxY * this.content.scrollTop / this.scrollMaxY;
 
         this.setState({
             thumbTop
@@ -133,6 +136,7 @@ export default class Scrollbar extends React.PureComponent<any, any> {
     }
 
     render(){
+
         return (
             <div className={"scroll" + (this.props.className ? ' ' + this.props.className : '')}>
                 
